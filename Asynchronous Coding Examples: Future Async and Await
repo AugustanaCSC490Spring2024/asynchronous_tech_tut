@@ -1,0 +1,16 @@
+// this code is from youtube video created by "Unsure Programmer"
+// the link : https://youtu.be/VkpXV0Q89Io?si=oV1YKzLE0C1Bxwyd
+
+
+void main() async{
+  int a = 5; 
+  int b = 10; 
+  final total =  await getTotal(a,b);
+  print(total); //uncompleted future 
+}
+
+Future<int> getTotal(a,b){
+  return Future.delayed(Duration(seconds:10), ()=> a+b );
+  
+  // return a + b ; 
+}
