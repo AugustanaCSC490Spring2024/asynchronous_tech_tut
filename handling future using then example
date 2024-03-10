@@ -1,0 +1,16 @@
+void main(){ 
+  getID().then((total) {
+    print(total); // Prints the completed result
+  });
+  
+  print("doing other stuff");
+}
+
+
+
+
+Future<String> getID(){
+  return Future.delayed(Duration(seconds:2), ()=> "Flaming Emu");
+}
+
+
